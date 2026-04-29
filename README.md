@@ -1,17 +1,75 @@
-# 3-Phase-Motor-Protection-Control-System
-Microcontroller-based 3-phase motor protection and control system with real-time fault detection (overvoltage, overcurrent, phase loss) and relay-based shutdown mechanism.
+# 3-Phase Motor Protection & Control System
 
-# Project Overview
-This project presents a microcontroller-based 3-phase motor protection and control system designed for industrial and agricultural applications. It monitors critical parameters such as phase sequence, voltage, and motor current to detect fault conditions like reverse phase, single phasing, and dry run. Upon detecting any abnormal condition, the system automatically takes protective action to prevent motor damage. Additionally, a GSM800L module is integrated to enable remote monitoring and control, allowing users to receive SMS alerts and operate the motor remotely, improving reliability, safety, and operational flexibility.
+## Overview
+
+Microcontroller-based system designed to protect and control a 3-phase motor by monitoring electrical parameters and detecting fault conditions such as reverse phase, single phasing, and dry run.
+
+The system ensures safe motor operation by automatically disconnecting the load during abnormal conditions and provides remote monitoring and control using a GSM module.
+
+
+
+## Key Features
+
+* Phase failure and reverse phase detection
+* Dry run detection
+* Automatic motor shutdown on fault
+* GSM-based SMS alerts
+* Remote motor ON/OFF control
+* Real-time system monitoring
+
+
+
+## System Architecture
+
+* Sensor Layer → Voltage & current sensing
+* Control Layer → Arduino-based decision logic
+* Actuation Layer → Relay-controlled motor switching
+* Communication Layer → GSM800L for remote alerts
+
+
+
+## Working Principle
+
+The system continuously monitors motor operating conditions using sensors. The microcontroller processes these inputs and compares them with predefined thresholds.
+
+* Normal Condition → Motor runs
+* Fault Detected → Relay disconnects motor
+* GSM Module → Sends alert to user
+
+
+
+## Repository Structure
+
+* `src/` → Firmware code (simplified version)
+* `docs/` → Detailed explanation of system
+* `hardware/` → Circuit and components
+* `images/` → Project visuals
+
+
 
 ## Note
-This repository contains a simplified version of the project code for demonstration purposes.
 
-Some advanced features such as:
-- Full GSM communication handling
-- SMS parsing and control logic
-- EEPROM-based phone management
+This repository contains a **simplified firmware version** for demonstration.
 
-are not included in this public version.
+Full implementation includes:
 
-If you are interested in the complete implementation, feel free to contact me.
+* Advanced GSM communication handling
+* SMS command parsing
+* EEPROM-based number management
+
+For full code access, feel free to contact me.
+
+
+
+## Tech Stack
+
+* Embedded C / Arduino
+* GSM800L
+* Relay Control
+* Sensor Integration
+
+
+## Author
+
+Harshal Belhekar
+
