@@ -3,3 +3,15 @@ Microcontroller-based 3-phase motor protection and control system with real-time
 
 # Project Overview
 This project presents a microcontroller-based 3-phase motor protection and control system designed for industrial and agricultural applications. It monitors critical parameters such as phase sequence, voltage, and motor current to detect fault conditions like reverse phase, single phasing, and dry run. Upon detecting any abnormal condition, the system automatically takes protective action to prevent motor damage. Additionally, a GSM800L module is integrated to enable remote monitoring and control, allowing users to receive SMS alerts and operate the motor remotely, improving reliability, safety, and operational flexibility.
+
+## Note
+This repository contains a simplified version of the project code for demonstration purposes.
+
+Some advanced features such as:
+- Full GSM communication handling
+- SMS parsing and control logic
+- EEPROM-based phone management
+
+are not included in this public version.
+
+If you are interested in the complete implementation, feel free to contact me.
